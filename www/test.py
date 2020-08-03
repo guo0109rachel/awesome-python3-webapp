@@ -4,7 +4,7 @@ import asyncio
 
 loop = asyncio.get_event_loop()
 async def test():
-    await orm.create_pool(user='root', password='password', db='awesome', loop=loop)
+    await orm.create_pool(user='www-data', password='www-data', db='awesome', loop=loop)
 
     u = User(name='Administrator', email='admin@example.com', admin = True, passwd='1234567890', image='about:blank')
 
